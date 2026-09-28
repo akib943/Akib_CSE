@@ -1,14 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, temp;
-    printf("Enter two numbers: ");
-    scanf("%d %d", &a, &b);
-
-    temp = a;
-    a = b;
-    b = temp;
-
-    printf("After swapping: a = %d, b = %d\n", a, b);
+    printf("Size of int = %zu bytes\n", sizeof(int));
+    printf("Size of float = %zu bytes\n", sizeof(float));
+    printf("Size of double = %zu bytes\n", sizeof(double));
+    printf("Size of char = %zu bytes\n", sizeof(char));
     return 0;
 }
