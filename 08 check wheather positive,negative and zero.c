@@ -1,9 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    printf("Size of int = %zu bytes\n", sizeof(int));
-    printf("Size of float = %zu bytes\n", sizeof(float));
-    printf("Size of double = %zu bytes\n", sizeof(double));
-    printf("Size of char = %zu bytes\n", sizeof(char));
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num > 0)
+        printf("%d is positive\n", num);
+    else if (num < 0)
+        printf("%d is negative\n", num);
+    else
+        printf("The number is zero\n");
     return 0;
 }
